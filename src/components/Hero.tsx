@@ -31,7 +31,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           <div className="space-y-3.5">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-gold-400/10 border border-gold-400/20 text-gold-400 text-[10px] font-mono uppercase tracking-widest rounded-full">
               <Award className="w-3.5 h-3.5 animate-spin-slow" />
-              <span className="font-mono text-xs uppercase tracking-widest text-gold-600 font-bold">
+              <span className="font-mono text-xs uppercase tracking-widest font-bold">
                 New York Clinic & National Board Standards
               </span>
             </div>
