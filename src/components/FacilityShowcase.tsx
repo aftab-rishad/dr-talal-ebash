@@ -18,7 +18,7 @@ export default function FacilityShowcase() {
             Urological Laser Center
           </h2>
           <p className="text-stone-600 text-sm md:text-base leading-relaxed font-sans font-light">
-            Our clinic at Saudi German Hospital UAE is outfitted with the latest advanced therapeutic technologies, including state-of-the-art Holmium lasers for prostate enucleation (HoLEP), high-definition 3D laparoscopy towers, and full-spectrum endoscopic instrumentation.
+            Our clinic at General Medical Hospital is outfitted with the latest advanced therapeutic technologies, including state-of-the-art Holmium lasers for prostate enucleation (HoLEP), high-definition 3D laparoscopy towers, and full-spectrum endoscopic instrumentation.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-stone-100">
             <div className="space-y-1">

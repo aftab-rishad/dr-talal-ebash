@@ -32,10 +32,10 @@ export default function EducationFAQ() {
         <div className="space-y-2 p-5 bg-white border border-stone-200/60 rounded-2xl">
           <h4 className="font-serif text-base font-semibold text-stone-900 flex items-start gap-1">
             <CornerDownRight className="w-4 h-4 text-[#1E6F60] shrink-0 mt-1" />
-            Do you host digital Teleconsultations for German residents?
+            Do you host digital Teleconsultations for out-of-state residents?
           </h4>
           <p className="text-stone-600 text-xs leading-relaxed font-sans font-light">
-            Yes. Having served as <strong>Chefarzt</strong> in Rheinland-Pfalz, Dr. Ebash regularly provides digital second opinions and therapeutic designs for patients in Germany, coordination files can be verified using GDPR compliant channels.
+            Yes. Having served as <strong>Chief Medical Officer</strong> in California, Dr. Doe regularly provides digital second opinions and therapeutic designs for patients globally, coordination files can be verified using GDPR compliant channels.
           </p>
         </div>
 

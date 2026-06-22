@@ -32,7 +32,7 @@ export default function ConsultationDesk({
     email: "",
     phone: "",
     primaryConcern: initialConcern,
-    consultationType: "dubai-inperson",
+    consultationType: "newyork-inperson",
     notes: "",
     referringDoctor: "",
   });
@@ -49,7 +49,7 @@ export default function ConsultationDesk({
 
   // Load bookings from localStorage
   useEffect(() => {
-    const saved = localStorage.getItem("ebash_consultations");
+    const saved = localStorage.getItem("doe_consultations");
     if (saved) {
       try {
         setInquiries(JSON.parse(saved));
@@ -69,7 +69,7 @@ export default function ConsultationDesk({
   };
 
   const handleTypeSelect = (
-    type: "dubai-inperson" | "second-opinion" | "urgent-advice",
+    type: "newyork-inperson" | "second-opinion" | "urgent-advice",
   ) => {
     setFormData((prev) => ({ ...prev, consultationType: type }));
   };
@@ -85,17 +85,17 @@ export default function ConsultationDesk({
     setTimeout(() => {
       const updated = [formData, ...inquiries];
       setInquiries(updated);
-      localStorage.setItem("ebash_consultations", JSON.stringify(updated));
+      localStorage.setItem("doe_consultations", JSON.stringify(updated));
       setSubmitting(false);
       setSuccessMsg(
-        "Your consultation slot has been reserved. In accordance with UAE healthcare regulation and HIPAA standard, our chief clinical coordinator will reach out to you within 4 hours.",
+        "Your consultation slot has been reserved. In accordance with national healthcare regulation and HIPAA standard, our chief clinical coordinator will reach out to you within 4 hours.",
       );
       setFormData({
         fullName: "",
         email: "",
         phone: "",
         primaryConcern: "General Consultation",
-        consultationType: "dubai-inperson",
+        consultationType: "newyork-inperson",
         notes: "",
         referringDoctor: "",
       });
@@ -105,7 +105,7 @@ export default function ConsultationDesk({
   const handleClear = (index: number) => {
     const updated = inquiries.filter((_, i) => i !== index);
     setInquiries(updated);
-    localStorage.setItem("ebash_consultations", JSON.stringify(updated));
+      localStorage.setItem("doe_consultations", JSON.stringify(updated));
   };
 
   // Get dynamic document list required based on selected clinical focus
@@ -206,7 +206,7 @@ export default function ConsultationDesk({
         <div className="hidden sm:flex items-center gap-1.5 text-stone-400 font-mono text-[10px]">
           <Clock className="w-3.5 h-3.5 text-gold-400" />
           <span>
-            Active Response Desk: <strong>GMT+4 (Dubai)</strong>
+            Active Response Desk: <strong>EST (New York)</strong>
           </span>
         </div>
       </div>
@@ -271,18 +271,18 @@ export default function ConsultationDesk({
                     <div className="grid grid-cols-3 gap-2">
                       <button
                         type="button"
-                        onClick={() => handleTypeSelect("dubai-inperson")}
+                        onClick={() => handleTypeSelect("newyork-inperson")}
                         className={`p-3 rounded-xl border text-center transition-all flex flex-col justify-between h-20 cursor-pointer ${
-                          formData.consultationType === "dubai-inperson"
+                          formData.consultationType === "newyork-inperson"
                             ? "bg-stone-950 text-gold-200 border-stone-950 shadow-md"
                             : "bg-stone-50 text-stone-600 border-stone-200 hover:border-gold-300"
                         }`}
                       >
                         <span className="text-[10px] uppercase font-mono tracking-wider block font-bold">
-                          Dubai Clinic
+                          New York Clinic
                         </span>
                         <span className="text-xs font-serif font-light block">
-                          Saudi German Health
+                          General Medical Health
                         </span>
                       </button>
 
@@ -299,7 +299,7 @@ export default function ConsultationDesk({
                           Second Opinion
                         </span>
                         <span className="text-xs font-serif font-light block">
-                          German Teleconsult
+                          Global Teleconsult
                         </span>
                       </button>
 
@@ -462,7 +462,7 @@ export default function ConsultationDesk({
                 </div>
                 <p className="text-stone-600 text-xs leading-relaxed font-sans">
                   To secure an expedited, medically comprehensive review during
-                  your appointment with Dr. Ebash, please prepare the following
+                  your appointment with Dr. Doe, please prepare the following
                   dossier:
                 </p>
 
@@ -513,7 +513,7 @@ export default function ConsultationDesk({
                 </p>
                 <div className="flex items-center gap-3 border-t border-gold-400/10 pt-3 text-[10px] font-mono text-[#1E6F60]">
                   <Award className="w-4 h-4 text-gold-500 shrink-0" />
-                  <span>Licensed under DHA (Dubai Health Authority)</span>
+                  <span>Licensed under National Medical Board</span>
                 </div>
               </div>
             </div>
@@ -566,10 +566,10 @@ export default function ConsultationDesk({
                         <div className="space-y-1">
                           <div className="flex items-center gap-2 flex-wrap">
                             <span className="font-mono text-[9px] uppercase tracking-wider bg-stone-900 text-gold-200 px-2 py-0.5 rounded font-bold">
-                              {inq.consultationType === "dubai-inperson"
-                                ? "Dubai Saudi German"
+                              {inq.consultationType === "newyork-inperson"
+                                ? "New York General Medical"
                                 : inq.consultationType === "second-opinion"
-                                  ? "German Teleconsult"
+                                  ? "Global Teleconsult"
                                   : "Urgent Oncology Review"}
                             </span>
                             <span className="text-stone-400 text-xs font-mono">

@@ -6,7 +6,7 @@
 export interface ClinicalFocus {
   id: string;
   title: string;
-  germanTitle?: string;
+  regionalTitle?: string;
   description: string;
   symptoms: string[];
   procedures: string[];
@@ -17,7 +17,7 @@ export interface ClinicalFocus {
 export interface CareerMilestone {
   id: string;
   role: string;
-  germanRole?: string;
+  regionalRole?: string;
   institution: string;
   location: string;
   period: string;
@@ -30,7 +30,7 @@ export interface CareerMilestone {
 export interface IPSSQuestion {
   id: number;
   question: string;
-  germanQuestion?: string;
+  regionalQuestion?: string;
   options: { value: number; label: string }[];
 }
 
@@ -39,7 +39,7 @@ export interface AppointmentInquiry {
   email: string;
   phone: string;
   primaryConcern: string;
-  consultationType: "dubai-inperson" | "second-opinion" | "urgent-advice";
+  consultationType: "newyork-inperson" | "second-opinion" | "urgent-advice";
   notes: string;
   referringDoctor?: string;
 }

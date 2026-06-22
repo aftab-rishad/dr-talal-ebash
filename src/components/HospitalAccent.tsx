@@ -17,13 +17,13 @@ export default function HospitalAccent({ onSelectInquiryType }: HospitalAccentPr
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div className="md:col-span-2 space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-gold-700 font-bold block">
-              Saudi German Health UAE Link
+              General Medical Health Link
             </span>
             <h2 className="font-serif text-2xl md:text-3xl text-stone-900 font-normal tracking-tight">
               Head of Urology at a Premier Regional Medical Group
             </h2>
             <p className="text-stone-600 text-sm leading-relaxed max-w-3xl font-sans font-light">
-              As the direct administrative and clinical head, Dr. Ebash drives continuous improvement parameters across diagnostic and surgical urology workflows. Translating decades of rigorous medical chamber guidelines from Nordrhein-Westfalen and Rheinland-Pfalz directly to patient care inside SGH Dubai.
+              As the direct administrative and clinical head, Dr. Doe drives continuous improvement parameters across diagnostic and surgical urology workflows. Translating decades of rigorous medical chamber guidelines from various jurisdictions directly to patient care inside GMH New York.
             </p>
           </div>
           <div className="bg-white p-6 border border-gold-200/60 rounded-2xl space-y-3.5 shadow-sm">
@@ -31,8 +31,8 @@ export default function HospitalAccent({ onSelectInquiryType }: HospitalAccentPr
               <MapPin className="w-4 h-4 text-gold-500" /> Clinic Location
             </div>
             <p className="text-stone-800 font-serif text-base leading-snug">
-              Urology Department, Saudi German Hospital Dubai,<br />
-              Hessa Street, Al Barsha 3, Dubai, UAE
+              Urology Department, General Medical Hospital New York,<br />
+              Broadway, Manhattan, New York, USA
             </p>
             <button
               onClick={() => onSelectInquiryType("General Consultation")}

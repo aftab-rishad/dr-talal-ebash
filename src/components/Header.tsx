@@ -20,14 +20,14 @@ export default function Header({ onScrollToSection }: HeaderProps) {
           <div className="flex items-center gap-1.5 font-bold">
             <ShieldCheck className="w-4 h-4 text-gold-400" />
             <span>
-              Bridging German Medical Precision & UAE Clinical Standards
+              Bridging Advanced Medical Precision & Global Clinical Standards
             </span>
           </div>
           <div className="flex items-center gap-4 animate-fade-in">
             <span className="hidden sm:inline">
-              Licensed Department: Saudi German Health Dubai
+              Licensed Department: General Medical Health New York
             </span>
-            <span>Board Certification: German Facharzt</span>
+            <span>Board Certification: National Medical Board</span>
           </div>
         </div>
       </div>
@@ -38,10 +38,10 @@ export default function Header({ onScrollToSection }: HeaderProps) {
           <div className="flex flex-col">
             <div className="flex items-baseline gap-2.5">
               <span className="font-serif text-xl sm:text-2xl tracking-normal font-semibold text-stone-900">
-                Dr. Talal Ebash
+                Dr. John Doe
               </span>
               <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#18594D] font-medium">
-                Facharzt für Urologie
+                Specialist in Urology
               </span>
             </div>
             <p className="text-[10px] sm:text-xs text-stone-500 tracking-tight">

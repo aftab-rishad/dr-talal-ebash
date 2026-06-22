@@ -10,7 +10,7 @@ import { ChevronRight, Activity, ShieldCheck, CheckCircle } from "lucide-react";
 export interface ClinicalFocusItem {
   id: string;
   title: string;
-  germanTitle: string;
+  regionalTitle: string;
   short: string;
   description: string;
   symptoms: string[];
@@ -22,7 +22,7 @@ export const clinicalFocuses: ClinicalFocusItem[] = [
   {
     id: "holep-bph",
     title: "BPH & HoLEP Surgery",
-    germanTitle: "Benigne Prostatahyperplasie & Holmium-Laser",
+    regionalTitle: "Benign Prostatic Hyperplasia & Holmium-Laser",
     short: "Modern medication and laser therapy (HoLEP) for benign prostatic hyperplasia with excellent outcome criteria.",
     description: "Benign prostatic hyperplasia (BPH) affects most men as they mature. We provide tiered management starting from pharmacotherapy optimization (alpha-blockers, 5-ARIs) up to surgical intervention. Our gold-standard technique is HoLEP (Holmium Laser Enucleation of the Prostate): an advanced, minimally invasive operation suited for large prostates that minimizes bleeding and ensures swift urinary rehabilitation.",
     symptoms: [
@@ -41,7 +41,7 @@ export const clinicalFocuses: ClinicalFocusItem[] = [
   {
     id: "uro-oncology",
     title: "Surgical Uro-Oncology",
-    germanTitle: "Urologische Onkologie und Tumorchirurgie",
+    regionalTitle: "Urological Oncology and Tumor Surgery",
     short: "Comprehensive clinical diagnostic screening and standard-setting surgeries for prostate, kidney, and bladder malignant cancers.",
     description: "Specialized oncology services cover the therapeutic spectrum of urological cancers. Employing evidence-based Guidelines (EAU / DGU), patients get custom treatment options. We champion minimally invasive laparoscopic approaches to access kidneys, adrenal glands, and pelvic elements, prioritizing tumor safety margins while minimizing post-intervention recovery times.",
     symptoms: [
@@ -54,12 +54,12 @@ export const clinicalFocuses: ClinicalFocusItem[] = [
       "Laparoscopic Nephrectomy / Partial Nephrectomy",
       "Endoscopic TURBT (Transurethral Resection of Bladder Tumors)"
     ],
-    premiumInsight: "Oncological surgery is measured first by margin safety. We marry strict German oncological resection protocols with laparoscopic precision to excise tumors cleanly while preserving crucial adjacent renal or nervous tissue."
+    premiumInsight: "Oncological surgery is measured first by margin safety. We marry strict oncological resection protocols with laparoscopic precision to excise tumors cleanly while preserving crucial adjacent renal or nervous tissue."
   },
   {
     id: "minimally-invasive",
     title: "Endourology & Minimally Invasive",
-    germanTitle: "Minimalinvasive Urologie & Endourologie",
+    regionalTitle: "Minimally Invasive Urology & Endourology",
     short: "High-definition endoscopic intervention for urinary tract pathologies, stones, and stricture corrections.",
     description: "Utilizing natural urinary passages removes the need for incisions entirely. Endourological management for kidney stones, ureteral calculi, and urethral strictures employs high-definition digital scopes, pneumatic/laser lithotripters, and micro-stent implants to safely restore physiological flow dynamics.",
     symptoms: [
@@ -77,7 +77,7 @@ export const clinicalFocuses: ClinicalFocusItem[] = [
   {
     id: "reconstructive-general",
     title: "Reconstructive & General Urology",
-    germanTitle: "Rekonstruktive & Allgemeine Urologie",
+    regionalTitle: "Reconstructive & General Urology",
     short: "Functional urology, stricture correction, and clinical diagnostic management of male health indicators.",
     description: "Restoring physical form and function is central to therapeutic urologic care. This subspecialty covers micro-surgical vascular evaluations, correction of anatomical curvatures (such as Peyronie's disease), bladder visual mapping, and functional reconstructive surgeries.",
     symptoms: [
@@ -112,7 +112,7 @@ export default function ClinicalFocuses({ onScrollToSection, onSelectInquiryType
           Comprehensive Specialist Urology Care
         </h2>
         <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans font-light">
-          Bringing elite German Facharzt precision across standard-defining surgeries. Discover specialized therapy categories offered at our Dubai clinic.
+          Bringing elite Board Certified precision across standard-defining surgeries. Discover specialized therapy categories offered at our New York clinic.
         </p>
       </div>
 
@@ -165,7 +165,7 @@ export default function ClinicalFocuses({ onScrollToSection, onSelectInquiryType
                   <div className="flex items-baseline justify-between border-b border-stone-100 pb-5 flex-wrap gap-2">
                     <div className="space-y-1">
                       <span className="font-mono text-xs text-gold-600 block font-semibold uppercase tracking-wider">
-                        {focus.germanTitle}
+                        {focus.regionalTitle}
                       </span>
                       <h4 className="font-serif text-2xl sm:text-3xl text-stone-900 font-normal">
                         {focus.title}
@@ -211,10 +211,10 @@ export default function ClinicalFocuses({ onScrollToSection, onSelectInquiryType
                     </div>
                   </div>
 
-                  {/* Dr. Ebash's Premium Expert Insight Box */}
+                  {/* Dr. Doe's Premium Expert Insight Box */}
                   <div className="bg-gold-50/50 border border-gold-200/40 p-5 rounded-2xl space-y-1.5">
                     <p className="text-[10px] font-mono text-gold-700 uppercase tracking-widest font-bold">
-                      Dr. Ebash's Clinical Perspective
+                      Dr. Doe's Clinical Perspective
                     </p>
                     <p className="text-stone-700 text-xs leading-relaxed italic font-sans font-light">
                       "{focus.premiumInsight}"

@@ -40,7 +40,7 @@ export default function App() {
       {/* Hero Showcase */}
       <Hero onScrollToSection={scrollToSection} />
 
-      {/* SGH UAE Organization Accent Link */}
+      {/* GMH Organization Accent Link */}
       <HospitalAccent onSelectInquiryType={handleInquiryChange} />
 
       {/* Interactive Clinical Specialties selector */}
@@ -66,9 +66,8 @@ export default function App() {
               Two Decades of Specialized Urology Excellence
             </h2>
             <p className="text-stone-300 text-sm leading-relaxed font-sans font-light">
-              Explore the accredited chronological track record of Dr. Talal
-              Ebash across major surgical departments and hospital networks in
-              Germany and the UAE.
+              Explore the accredited chronological track record of Dr. John
+              Doe across major surgical departments and hospital networks globally.
             </p>
           </div>
 

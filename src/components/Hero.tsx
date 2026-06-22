@@ -18,7 +18,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200"
-          alt="Saudi German Health Dubai luxury consulting suit"
+          alt="General Medical Health luxury consulting suit"
           className="w-full h-full object-cover object-center opacity-30 select-none pointer-events-none filter brightness-75 scale-102 transition-transform duration-1000"
           referrerPolicy="no-referrer"
         />
@@ -31,13 +31,15 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           <div className="space-y-3.5">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-gold-400/10 border border-gold-400/20 text-gold-400 text-[10px] font-mono uppercase tracking-widest rounded-full">
               <Award className="w-3.5 h-3.5 animate-spin-slow" />
-              Dubai Clinic & German Board Standards
+              <span className="font-mono text-xs uppercase tracking-widest text-gold-600 font-bold">
+              New York Clinic & National Board Standards
+            </span>
             </div>
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-white leading-[1.1]">
-              German Clinical Precision.
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-stone-900 leading-[1.1] tracking-tight">
+              Advanced Clinical Precision.
               <br />
-              <span className="text-[#9ECFC6] font-normal italic">
-                Dubai Medical Excellence.
+              <span className="text-stone-400 italic">
+                Medical Excellence.
               </span>
             </h1>
           </div>
@@ -45,9 +47,9 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           <p className="font-sans text-stone-300 text-sm sm:text-base md:text-lg font-light leading-relaxed max-w-2xl">
             Bringing over{" "}
             <strong>20 years of clinical urological surgery</strong> and premier
-            leadership as former <strong>Chefarzt</strong> in
-            Rhineland-Palatinate, Germany. Dr. Talal Ebash directs the Urology
-            Department at Saudi German Hospital UAE with an evidence-based,
+            leadership as former <strong>Chief Medical Director</strong> in
+            California, USA. Dr. John Doe directs the Urology
+            Department at General Medical Hospital with an evidence-based,
             patient-centered dedication.
           </p>
 
@@ -78,7 +80,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             </div>
             <div>
               <div className="font-serif text-2xl md:text-3xl font-light text-[#9ECFC6]">
-                German Chefarzt
+                Chief Medical Officer
               </div>
               <div className="font-mono text-[9px] uppercase tracking-widest text-stone-400 mt-1">
                 Department Directorship
@@ -86,10 +88,10 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             </div>
             <div className="col-span-2 sm:col-span-1">
               <div className="font-serif text-2xl md:text-3xl font-light text-white">
-                Saudi German
+                General Medical
               </div>
               <div className="font-mono text-[9px] uppercase tracking-widest text-stone-400 mt-1">
-                UAE Headship
+                Department Headship
               </div>
             </div>
           </div>
@@ -139,10 +141,12 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               </div>
               <div>
                 <strong className="text-white block font-medium font-bold">
-                  German-DHA Clinical Governance
+                  International Clinical Governance
                 </strong>
-                Maintaining stringent clinical standards through surgical team
-                training, audits, and multidisciplinary coordination in Dubai.
+                <p className="text-stone-500 text-xs leading-relaxed font-sans mt-1.5">
+                  Integrating international standard practices, rigorous surgical
+                  training, audits, and multidisciplinary coordination globally.
+                </p>
               </div>
             </div>
           </div>
@@ -150,11 +154,11 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           {/* Quick Contact Action */}
           <div className="border-t border-gold-400/10 pt-4 flex items-center justify-between">
             <div className="space-y-0.5">
-              <span className="text-[9px] font-mono text-stone-400 uppercase tracking-widest block">
-                DUBAI PRIORITY LINE
+               <span className="text-[9px] font-mono text-stone-400 uppercase tracking-widest block">
+                PRIORITY LINE
               </span>
               <span className="text-xs font-mono font-medium text-gold-300 block">
-                Saudi German Coordinator
+                General Coordinator
               </span>
             </div>
             <a

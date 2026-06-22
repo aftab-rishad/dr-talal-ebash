@@ -12,14 +12,14 @@ const MILESTONES: CareerMilestone[] = [
   {
     id: "sgh-hod",
     role: "Consultant Urologist - Head of Department",
-    germanRole: "Chefarzt / Abteilungsleiter der Urologie",
-    institution: "Saudi German Health UAE",
-    location: "Dubai, United Arab Emirates",
+    regionalRole: "Chief Medical Officer / Head of Urology",
+    institution: "General Medical Hospital",
+    location: "New York, USA",
     period: "April 2024 - Present",
     duration: "2 Years 3 Months",
     isCurrent: true,
     achievements: [
-      "Leading the Urology Department at Saudi German Health UAE, one of the largest private hospital groups in the Middle East.",
+      "Leading the Urology Department at General Medical Hospital, one of the largest private hospital groups in the region.",
       "Responsible for clinical governance, department strategy, and the delivery of high-quality urological care to a diverse patient population.",
       "Performing a wide range of urological procedures including minimally invasive, laparoscopic and endoscopic surgeries.",
       "Managing and mentoring a multidisciplinary urology team while ensuring adherence to international clinical standards and patient safety protocols."
@@ -29,9 +29,9 @@ const MILESTONES: CareerMilestone[] = [
   {
     id: "sgh-consultant",
     role: "Consultant Urologist",
-    germanRole: "Facharzt für Urologie (Consultant)",
-    institution: "Saudi German Health UAE",
-    location: "Dubai, United Arab Emirates",
+    regionalRole: "Specialist in Urology (Consultant)",
+    institution: "General Medical Hospital",
+    location: "New York, USA",
     period: "October 2023 - April 2024",
     duration: "7 Months",
     isCurrent: false,
@@ -44,9 +44,9 @@ const MILESTONES: CareerMilestone[] = [
   {
     id: "kio-chefarzt",
     role: "Chefarzt (Chief Medical Director - Urology)",
-    germanRole: "Chefarzt der Urologischen Klinik",
-    institution: "Klinikum Idar-Oberstein GmbH",
-    location: "Rheinland-Pfalz, Germany",
+    regionalRole: "Chief Medical Director of Urology Clinic",
+    institution: "State Regional Hospital",
+    location: "California, USA",
     period: "July 2021 - October 2023",
     duration: "2 Years 4 Months",
     isCurrent: false,
@@ -54,16 +54,16 @@ const MILESTONES: CareerMilestone[] = [
       "Led the Urology Department as Chief Physician, building it from the ground up into a fully functioning and highly successful surgical unit.",
       "Established and introduced key advanced services including laparoscopic urology, reconstructive urology, and HoLEP (Holmium Laser Enucleation of the Prostate) for BPH treatment.",
       "Oversaw all clinical, surgical, and bureaucratic operations, driving continuous improvement in qualitative safety and patient outcomes.",
-      "Held the official 'Weiterbildungsermächtigung' (accredited training authorization) to structuredly train junior physicians pursuing specialization (Facharztweiterbildung) in urology."
+      "Held the official 'Weiterbildungsermächtigung' (accredited training authorization) to structuredly train junior physicians pursuing specialization (Board Certification) in urology."
     ],
-    subspecialties: ["HoLEP Pioneer", "Laparoscopic Urology", "Reconstructive Urology", "Structured Medical Training (Facharzt training)"]
+    subspecialties: ["HoLEP Pioneer", "Laparoscopic Urology", "Reconstructive Urology", "Structured Medical Training (Board training)"]
   },
   {
     id: "rmk-loa",
     role: "Leitender Oberarzt & Head of Oncology",
-    germanRole: "Leitender Oberarzt & Leiter der Uro-Onkologie",
-    institution: "Rhein-Maas Klinikum GmbH",
-    location: "Würselen (Nordrhein-Westfalen), Germany",
+    regionalRole: "Senior Attending & Head of Uro-Oncology",
+    institution: "University Medical Center",
+    location: "Los Angeles, California, USA",
     period: "August 2016 - June 2021",
     duration: "4 Years 11 Months",
     isCurrent: false,
@@ -78,9 +78,9 @@ const MILESTONES: CareerMilestone[] = [
   {
     id: "rmk-oa",
     role: "Oberarzt (Attending Urologist)",
-    germanRole: "Oberarzt für Urologie",
-    institution: "Rhein-Maas Klinikum GmbH",
-    location: "Würselen (Nordrhein-Westfalen), Germany",
+    regionalRole: "Attending Urologist",
+    institution: "University Medical Center",
+    location: "Los Angeles, California, USA",
     period: "April 2015 - August 2016",
     duration: "1 Year 5 Months",
     isCurrent: false,
@@ -92,54 +92,54 @@ const MILESTONES: CareerMilestone[] = [
   },
   {
     id: "kio-facharzt",
-    role: "Facharzt (Board Certified Specialist)",
-    germanRole: "Facharzt für Urologie",
-    institution: "Klinikum Idar-Oberstein GmbH",
-    location: "Rheinland-Pfalz, Germany",
+    role: "Specialist (Board Certified Specialist)",
+    regionalRole: "Board Certified Specialist",
+    institution: "State Regional Hospital",
+    location: "California, USA",
     period: "2013 - 2015",
     duration: "2 Years",
     isCurrent: false,
     achievements: [
-      "Practiced as certified specialist urologist upon completing the comprehensive German Facharztweiterbildung.",
+      "Practiced as certified specialist urologist upon completing the comprehensive National Board Certification.",
       "Performed advanced diagnostics, flexible cystoscopies, and basic-to-moderate urological operations."
     ]
   },
   {
     id: "kio-resident",
     role: "Assistenzarzt (Urology Resident)",
-    germanRole: "Assistenzarzt in der Facharztweiterbildung",
-    institution: "Klinikum Idar-Oberstein GmbH",
-    location: "Rheinland-Pfalz, Germany",
+    regionalRole: "Resident Doctor",
+    institution: "State Regional Hospital",
+    location: "California, USA",
     period: "2007 - 2013",
     duration: "6 Years",
     isCurrent: false,
     achievements: [
-      "Completed 6 years of intensive structured surgical residency in Germany, dealing with full-spectrum urological cases and emergency urological trauma."
+      "Completed 6 years of intensive structured surgical residency, dealing with full-spectrum urological cases and emergency urological trauma."
     ]
   },
   {
     id: "marienkrankenhaus",
     role: "Assistenzarzt (Resident Doctor)",
-    germanRole: "Assistenzarzt für Urologie",
-    institution: "Krankenhäuser Marienkrankenhaus Hamburg",
-    location: "Hamburg, Germany",
+    regionalRole: "Resident in Urology",
+    institution: "City General Hospital",
+    location: "Chicago, Illinois, USA",
     period: "2006 - 2007",
     duration: "1 Year",
     isCurrent: false,
     achievements: [
-      "Gained key initial clinical training in Germany within the highly respected Marienkrankenhaus department in Hamburg."
+      "Gained key initial clinical training within the highly respected City General Hospital department in Chicago."
     ]
   }
 ];
 
 export default function ExperienceTimeline() {
-  const [filterRegion, setFilterRegion] = useState<"all" | "uae" | "germany">("all");
+  const [filterRegion, setFilterRegion] = useState<"all" | "ny" | "national">("all");
   const [expandedId, setExpandedId] = useState<string | null>("sgh-hod");
 
   const filteredMilestones = MILESTONES.filter((m) => {
     if (filterRegion === "all") return true;
-    if (filterRegion === "uae") return m.location.includes("United Arab Emirates") || m.location.includes("UAE");
-    if (filterRegion === "germany") return m.location.includes("Germany");
+    if (filterRegion === "ny") return m.location.includes("New York");
+    if (filterRegion === "national") return m.location.includes("USA") && !m.location.includes("New York");
     return true;
   });
 
@@ -163,24 +163,24 @@ export default function ExperienceTimeline() {
             All Milestones ({MILESTONES.length})
           </button>
           <button
-            onClick={() => setFilterRegion("uae")}
+            onClick={() => setFilterRegion("ny")}
             className={`px-4 py-2 rounded-full text-xs font-mono font-medium tracking-wider transition-all cursor-pointer ${
-              filterRegion === "uae"
+              filterRegion === "ny"
                 ? "bg-stone-900 text-gold-200 shadow-sm"
                 : "text-stone-600 hover:text-stone-900"
             }`}
           >
-            Dubai Headship
+            New York Headship
           </button>
           <button
-            onClick={() => setFilterRegion("germany")}
+            onClick={() => setFilterRegion("national")}
             className={`px-4 py-2 rounded-full text-xs font-mono font-medium tracking-wider transition-all cursor-pointer ${
-              filterRegion === "germany"
+              filterRegion === "national"
                 ? "bg-stone-900 text-gold-200 shadow-sm"
                 : "text-stone-600 hover:text-stone-900"
             }`}
           >
-            Germany Clinical Track
+            National Clinical Track
           </button>
         </div>
       </div>
@@ -234,9 +234,9 @@ export default function ExperienceTimeline() {
                     <h4 className="font-serif text-xl font-medium tracking-tight mt-1">
                       {milestone.role}
                     </h4>
-                    {milestone.germanRole && (
+                    {milestone.regionalRole && (
                       <p className={`text-xs italic font-sans ${milestone.isCurrent ? "text-stone-400" : "text-stone-500"}`}>
-                        German Title: {milestone.germanRole}
+                        Regional Title: {milestone.regionalRole}
                       </p>
                     )}
 
@@ -319,8 +319,8 @@ export default function ExperienceTimeline() {
                           </div>
                         )}
 
-                        {/* Accredited clinical seal (German standards) */}
-                        {milestone.location.includes("Germany") && (
+                        {/* Accredited clinical seal (National standards) */}
+                        {milestone.location.includes("USA") && (
                           <div className={`flex items-center gap-2 p-3 rounded-lg border text-xs leading-relaxed ${
                             milestone.isCurrent
                               ? "bg-stone-900 border-gold-400/10 text-stone-300"
@@ -328,7 +328,7 @@ export default function ExperienceTimeline() {
                           }`}>
                             <ShieldCheck className="w-4 h-4 text-gold-500 shrink-0" />
                             <span>
-                              Evaluated and practiced under the stringent standards of the <strong>Landesärztekammer (German Medical Chamber)</strong>, conforming to high European Association of Urology (EAU) directives.
+                              Evaluated and practiced under the stringent standards of the <strong>American Board of Urology (ABU)</strong>, conforming to high American Urological Association (AUA) directives.
                             </span>
                           </div>
                         )}

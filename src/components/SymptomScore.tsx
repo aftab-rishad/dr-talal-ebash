@@ -148,7 +148,7 @@ export default function SymptomScore({
     return {
       label: "Severe (Schwere Symptomatik)",
       color: "text-rose-700 bg-rose-50 border-rose-100",
-      desc: "Your scores reflect advanced, severe urinary obstruction. There is an increased clinical risk of progressive bladder accommodation failure or urinary retention. Under modern German and UAE guidelines, advanced therapies such as HoLEP (laser enucleation) or laparoscopic surgical solutions represent the absolute gold-standard to preserve renal and detrusor bladder function.",
+      desc: "Your scores reflect advanced, severe urinary obstruction. There is an increased clinical risk of progressive bladder accommodation failure or urinary retention. Under modern Global guidelines, advanced therapies such as HoLEP (laser enucleation) or laparoscopic surgical solutions represent the absolute gold-standard to preserve renal and detrusor bladder function.",
     };
   };
 
@@ -203,7 +203,7 @@ export default function SymptomScore({
                 and track Benign Prostatic Hyperplasia (BPH).
               </p>
               <p>
-                As a German-trained former **Chefarzt**, Dr. Talal Ebash
+                As a Board-certified former **Chief Medical Officer**, Dr. John Doe
                 coordinates care using structured algorithmic evaluation. Scores
                 range from **0 to 35** across obstructive and irritative
                 symptoms, accompanied by a dedicated **Quality of Life (QoL)
@@ -486,16 +486,16 @@ export default function SymptomScore({
                 </div>
               </div>
 
-              {/* Dr Ebash custom gold standard advice */}
+              {/* Dr Doe custom gold standard advice */}
               <div className="bg-gold-100/30 border-l-4 border-gold-500 p-4 rounded-r-xl space-y-1 mt-4">
                 <h6 className="font-serif text-sm text-gold-800 font-bold flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-gold-500 animate-spin-slow" />{" "}
                   Expert Note on HoLEP & Minimally Invasive Care
                 </h6>
                 <p className="text-stone-700 text-xs leading-relaxed font-sans">
-                  As the former Chefarzt who introduced HoLEP (laser
-                  enucleation) extensively in Rhineland-Palatinate, Germany, Dr.
-                  Ebash recommends HoLEP for moderate-to-severe symptoms. Unlike
+                  As the former Chief Medical Officer who introduced HoLEP (laser
+                  enucleation) extensively in California, USA, Dr.
+                  Doe recommends HoLEP for moderate-to-severe symptoms. Unlike
                   traditional surgery, HoLEP utilizes laser precision to remove
                   large prostatic tissue blocks with near-zero bleeding, low
                   catheterization times, and complete histological safety. It
