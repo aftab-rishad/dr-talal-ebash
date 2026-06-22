@@ -4,6 +4,8 @@
  */
 
 import React from "react";
+// @ts-ignore: asset import declarations for jpg are handled by the bundler
+import ImageBg from "../assets/images/laser_urology_center_1781988456815.jpg";
 
 export default function FacilityShowcase() {
   return (
@@ -18,19 +20,27 @@ export default function FacilityShowcase() {
             Urological Laser Center
           </h2>
           <p className="text-stone-600 text-sm md:text-base leading-relaxed font-sans font-light">
-            Our clinic at General Medical Hospital is outfitted with the latest advanced therapeutic technologies, including state-of-the-art Holmium lasers for prostate enucleation (HoLEP), high-definition 3D laparoscopy towers, and full-spectrum endoscopic instrumentation.
+            Our clinic at General Medical Hospital is outfitted with the latest
+            advanced therapeutic technologies, including state-of-the-art
+            Holmium lasers for prostate enucleation (HoLEP), high-definition 3D
+            laparoscopy towers, and full-spectrum endoscopic instrumentation.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-stone-100">
             <div className="space-y-1">
-              <div className="font-serif text-lg font-normal text-stone-900">Advanced HoLEP</div>
+              <div className="font-serif text-lg font-normal text-stone-900">
+                Advanced HoLEP
+              </div>
               <div className="font-sans text-xs text-stone-500 font-light">
                 Precision laser tissue dissection and rapid recovery protocols.
               </div>
             </div>
             <div className="space-y-1">
-              <div className="font-serif text-lg font-normal text-stone-900">3D Laparoscopy</div>
+              <div className="font-serif text-lg font-normal text-stone-900">
+                3D Laparoscopy
+              </div>
               <div className="font-sans text-xs text-stone-500 font-light font-sans">
-                Enhanced spatial perception for complex keyhole oncology surgeries.
+                Enhanced spatial perception for complex keyhole oncology
+                surgeries.
               </div>
             </div>
           </div>
@@ -38,7 +48,7 @@ export default function FacilityShowcase() {
         <div className="lg:col-span-6">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gold-200/50 group">
             <img
-              src="/src/assets/images/laser_urology_center_1781988456815.jpg"
+              src={ImageBg}
               alt="State-of-the-art diagnostic and urological laser center"
               className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"
